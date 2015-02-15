@@ -16,6 +16,14 @@ g++ -o calculator calculator.cpp
 
 ./calculator
 
+## Parsing Details
+
+Accepts expression from user in the form of <integer> <operator> <integer> as a single string and calculates result e.g. "104 * 876" , "465 +  980"
+
+There must be at least one blank between integer and operator
+
+Accepts extra blanks in front of first integer, operator, and second integer
+
 ## Sample output
 
 ```
@@ -28,10 +36,21 @@ Result is 201595
 calculator :>
 ```
 
-### Limitations
+### example of input with spaces
 
-Two operand limitation
+```
+calculator [master] :> ./calculator 
+This program is a command line calculator.
+Please enter an integer, an operator ( +, -, *, / ), and a second integer.
+Example: 104 * 876 
+Please enter an expression to evaluate:    1040   *    55786
+Result is 58017440
+calculator [master] :>
+```
 
-Integer division
+#### Limitations
 
-Integer input only
+Two operand limit, integer intput only
+
+Integer division, calculator will truncate divided results to integer value
+
