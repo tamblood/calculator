@@ -36,7 +36,7 @@ Result is 201595
 calculator :>
 ```
 
-### example of input with spaces
+## Sample input with spaces
 
 ```
 calculator [master] :> ./calculator 
